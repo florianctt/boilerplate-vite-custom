@@ -13,7 +13,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './test/setupTest.ts',
+    setupFiles: './src/test/setupTests.ts',
   },
   /* DEVELOPMENT */
   server: {
@@ -23,13 +23,8 @@ export default defineConfig({
   build: {
     outDir: './build',
     rollupOptions: {
-      // input: {
-      //   admin: './admin/index.html',
-      //   client: './client/index.html',
-      // },
       output: {
         sourcemap: true,
-        // preserveModules: true,
         entryFileNames: '[name].js',
         assetFileNames: '[name].[ext]',
       },

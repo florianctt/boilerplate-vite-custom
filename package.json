@@ -12,6 +12,11 @@
     "test:run": "vitest run",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
   "dependencies": {
     "@tanstack/react-query": "^4.14.5",
     "eslint": "^8.27.0",

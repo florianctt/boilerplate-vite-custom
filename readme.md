@@ -1,6 +1,12 @@
 # BoilerPlate Vite
 With EsLint, Vitest, React, Typescript, SCSS, TanStack Query, Zustand and Husky
 
+### TODO
+- [] [Lint Staged](https://www.youtube.com/watch?v=oWty0Nw1ydk&ab_channel=LeighHalliday) 
+- [] Config Commitlint for fonctionnal Prompt
+- [] Absolute Path ???
+- [] React Router Dom ???
+
 ## Getting Started
 ___
 

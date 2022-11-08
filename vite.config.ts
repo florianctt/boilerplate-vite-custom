@@ -19,6 +19,13 @@ export default defineConfig({
   server: {
     open: true,
   },
+  // resolve: {
+  //   alias: [
+  //     { find: '@/', replacement: '/src' },
+  //     { find: '@/Components', replacement: '/src/components' },
+  //     { find: '@/Hooks', replacement: '/src/hooks' },
+  //   ],
+  // },
   /* PRODUCTION */
   build: {
     outDir: './build',

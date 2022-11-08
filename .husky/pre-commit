@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm test:run
+git add .
+# pnpm tsc
+# pnpm test:run
+# pnpm lint-staged

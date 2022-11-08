@@ -6,6 +6,6 @@ describe('test', () => {
   test('store', () => {
     render(<App />)
     /* Check on App components if h2 with Store content exist */
-    expect(screen.getByRole('heading', { level: 2, name: /Store/ }))
+    expect(screen.getByRole('heading', { level: 3, name: /Store/ }))
   })
 })

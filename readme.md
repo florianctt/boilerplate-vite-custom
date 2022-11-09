@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
   #link{
     color: #4EBFFF;
   }
@@ -13,10 +13,10 @@
     color: #a354fe;
     text-decoration: none;
   }
-</style>
+</style> -->
 
 <p style="text-align: center;">
-<img src='./readme/vitejs.png' height="160" />
+<img src='./markdown/vitejs.png' height="160" />
 </p>
 <br>
 
@@ -55,7 +55,7 @@
 Table of contents
 <br>
 <br>
-<img src="./readme/menu.svg" height="24" />
+<img src="./markdown/menu.svg" height="24" />
 </h2>
 <p style="text-align: center;">
 Use the "Table of Contents" menu on the top-left corner to explore the list.

@@ -15,15 +15,15 @@
   }
 </style> -->
 
-<p align="center" style="text-align: center;">
+<p align="center">
 <img src='./markdown/vitejs.png' height="160" />
 </p>
 <br>
 
-<h1 style="text-align: center;"> BoilerPlate Vite React TypeScript</h1>
-<p style="text-align: center; font-weight: 600;">with <a id="link" href="https://eslint.org/" target="_blank">EsLint</a>, <a id="link" href="https://vitest.dev/" target="_blank">Vitest</a>, <a id="link" href="https://sass-lang.com/" target="_blank">SASS</a>, <a id="link" href="https://tanstack.com/query/v4" target="_blank">TanStack Query</a>, <a id="link" href="https://github.com/pmndrs/zustand" target="_blank">Zustand</a>, <a id="link" href="https://typicode.github.io/husky/#/" target="_blank">Husky</a>, <a id="link" href="https://commitlint.js.org/#/" target="_blank">Commitlint</a></p>
+<h1 align="center"> BoilerPlate Vite React TypeScript</h1>
+<p align="center" style="font-weight: 600;">with <a id="link" href="https://eslint.org/" target="_blank">EsLint</a>, <a id="link" href="https://vitest.dev/" target="_blank">Vitest</a>, <a id="link" href="https://sass-lang.com/" target="_blank">SASS</a>, <a id="link" href="https://tanstack.com/query/v4" target="_blank">TanStack Query</a>, <a id="link" href="https://github.com/pmndrs/zustand" target="_blank">Zustand</a>, <a id="link" href="https://typicode.github.io/husky/#/" target="_blank">Husky</a>, <a id="link" href="https://commitlint.js.org/#/" target="_blank">Commitlint</a></p>
 <br>
-<p style="text-align: center;">
+<p align="center">
 <!-- Linter -->
 <a href="https://eslint.org/" target="_blank">
 <img src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white" />
@@ -51,19 +51,19 @@
 </p>
 <br>
 
-<h2 style="color: #ffbe0e; text-align: center">
+<h2 align="center" style="color: #ffbe0e">
 Table of contents
 <br>
 <br>
 <img src="./markdown/menu.svg" height="24" />
 </h2>
-<p style="text-align: center;">
+<p align="center">
 Use the "Table of Contents" menu on the top-left corner to explore the list.
 </p>
 
 <br>
 <br>
-<h2 id="getting-started" style="color: #ffbe0e; text-align: center">Getting Started</h2>
+<h2 id="getting-started"  align="center" style="color: #ffbe0e">Getting Started</h2>
 
 
 ***Install***
@@ -89,7 +89,7 @@ pnpm test
 
 <br>
 <br>
-<h2 id="tanstack" style="color: #ffbe0e; text-align: center"><a id="title-link" href="https://tanstack.com/query/v4" target="_blank">TanStack Query</a></h2>
+<h2 id="tanstack"  align="center" style="color: #ffbe0e"><a id="title-link" href="https://tanstack.com/query/v4" target="_blank">TanStack Query</a></h2>
 
 <h3 style="text-align: center">Example</h3>
 <br>
@@ -191,10 +191,10 @@ export const FetchData = () => {
 
 <br>
 <br>
-<h2 id="zustand" style="color: #ffbe0e; text-align: center"><a id="title-link" href="https://github.com/pmndrs/zustand" target="_blank">Zustand</a></h2>
+<h2 id="zustand" align="center" style="color: #ffbe0e"><a id="title-link" href="https://github.com/pmndrs/zustand" target="_blank">Zustand</a></h2>
 
 
-<h3 style="text-align: center">Example</h3>
+<h3 align="center">Example</h3>
 <br>
 <br>
 
@@ -235,7 +235,7 @@ export const App = () => {
 
 <br>
 <br>
-<h2 id="commit" style="color: #ffbe0e; text-align: center">Commit</h2>
+<h2 id="commit" align="center" style="color: #ffbe0e">Commit</h2>
 <br>
 
 For commit in one command use:
@@ -253,7 +253,7 @@ This command do:
 
 <br>
 <br>
-<h2 id="absolute-path" style="color: #ffbe0e; text-align: center">Absolute Path</h2>
+<h2 id="absolute-path" align="center" style="color: #ffbe0e">Absolute Path</h2>
 <br>
 
 Actually 3 absolute path are configured:

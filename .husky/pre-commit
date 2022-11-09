@@ -2,6 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 git add .
-# pnpm tsc
-# pnpm test:run
-# pnpm lint-staged
+pnpm tsc
+pnpm test:run
+pnpm lint-staged

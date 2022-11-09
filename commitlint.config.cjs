@@ -1,66 +1,58 @@
 const config = {
+  rules: {
+    'body-leading-blank': [1, 'always'],
+    'body-max-line-length': [2, 'always', 100],
+    'footer-leading-blank': [1, 'always'],
+    'footer-max-line-length': [2, 'always', 100],
+    'header-max-length': [2, 'always', 100],
+    'subject-case': [2, 'never', ['sentence-case', 'start-case', 'pascal-case', 'upper-case']],
+    'subject-empty': [2, 'never'],
+    'subject-full-stop': [2, 'never', '.'],
+    'type-case': [2, 'always', 'lower-case'],
+    'type-empty': [2, 'never'],
+    'type-enum': [
+      2,
+      'always',
+      ['build', 'chore', 'ci', 'docs', 'feat', 'fix', 'perf', 'refactor', 'revert', 'style', 'test'],
+    ],
+  },
   prompt: {
     questions: {
       type: {
         description: "Select the type of change that you're committing",
         enum: {
           feat: {
-            description: 'A new feature',
-            title: 'Features',
-            emoji: '✨',
+            description: 'New feature ✨',
           },
           fix: {
-            description: 'A bug fix',
-            title: 'Bug Fixes',
-            emoji: '🐛',
+            description: 'Bug fix 🐛',
           },
           docs: {
-            description: 'Documentation only changes',
-            title: 'Documentation',
-            emoji: '📚',
+            description: 'Documentation changes 📚',
           },
           style: {
-            description:
-              'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)',
-            title: 'Styles',
-            emoji: '💎',
+            description: 'Styles change 💎',
           },
           refactor: {
-            description: 'A code change that neither fixes a bug nor adds a feature',
-            title: 'Code Refactoring',
-            emoji: '📦',
+            description: 'Code Refactoring 📦',
           },
           perf: {
-            description: 'A code change that improves performance',
-            title: 'Performance Improvements',
-            emoji: '🚀',
+            description: 'Performance Improvements 🚀',
           },
           test: {
-            description: 'Adding missing tests or correcting existing tests',
-            title: 'Tests',
-            emoji: '🚨',
+            description: 'Add tests or correct tests 🚨',
           },
           build: {
-            description:
-              'Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)',
-            title: 'Builds',
-            emoji: '🛠',
+            description: 'Changes affect build system or external dependencies 🛠',
           },
           ci: {
-            description:
-              'Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)',
-            title: 'Continuous Integrations',
-            emoji: '⚙️',
+            description: 'Continuous Integrations changes ⚙️',
           },
           chore: {
-            description: "Other changes that don't modify src or test files",
-            title: 'Chores',
-            emoji: '♻️',
+            description: "Other changes that don't modify src or test files ♻️",
           },
           revert: {
-            description: 'Reverts a previous commit',
-            title: 'Reverts',
-            emoji: '🗑',
+            description: 'Reverts a previous commit 🗑',
           },
         },
       },

@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname "$0")/_/husky.sh"
-
-echo "Type: build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test"
-
-exec < /dev/tty && node_modules/.bin/cz --hook || true

@@ -2,8 +2,8 @@
 With EsLint, Vitest, React, Typescript, SCSS, TanStack Query, Zustand and Husky
 
 ### TODO
-- [] [Lint Staged](https://www.youtube.com/watch?v=oWty0Nw1ydk&ab_channel=LeighHalliday) 
-- [] Config Commitlint for fonctionnal Prompt
+- [x] [Lint Staged](https://www.youtube.com/watch?v=oWty0Nw1ydk&ab_channel=LeighHalliday) 
+- [] Config Commitlint for fonctionnal Prompt 'Desc ok but no enum'
 - [] Absolute Path ???
 - [] React Router Dom ???
 

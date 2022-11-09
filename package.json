@@ -11,7 +11,7 @@
     "test": "vitest",
     "test:run": "vitest run",
     "prepare": "husky install",
-    "commit": "commit"
+    "commit": "git add . && git cz"
   },
   "config": {
     "commitizen": {

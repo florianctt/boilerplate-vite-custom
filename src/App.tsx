@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-// import { FetchData } from './components/FetchData'
-import { useStore } from './hooks/store'
+import { FetchData } from '@components/FetchData'
+import { useStore } from '@hooks/store'
 
 const queryClient = new QueryClient()
 

@@ -4,11 +4,21 @@ With EsLint, Vitest, React, Typescript, SCSS, TanStack Query, Zustand and Husky
 ### TODO
 - [x] [Lint Staged](https://www.youtube.com/watch?v=oWty0Nw1ydk&ab_channel=LeighHalliday) 
 - [x] Config Commitlint for fonctionnal Prompt
-- [] Absolute Path ???
-- [] React Router Dom ???
+- [x] Absolute Path
+- [] React Router Dom
 
-## Getting Started
-___
+
+<h2 style="color: #7743DB">Menu</h2>
+<ul>
+  <li><a href="#getting-started" style="color: olive;">Getting Started</a></li>
+  <li><a href="#tanstack" style="color: olive;">TanStack Query</a></li>
+  <li><a href="#zustand" style="color: olive;">Zustand</a></li>
+  <li><a href="#commit" style="color: olive;">Commit</a></li>
+  <li><a href="#absolute-path" style="color: olive;">Absolute Path</a></li>
+</ul>
+
+<h2 id="getting-started" style="color: #7743DB">Getting Started</h2>
+
 
 **Install**
 ```
@@ -31,7 +41,7 @@ pnpm test
 ```
 
 
-## TanStack Query
+<h2 id="tanstack" style="color: #7743DB">TanStack Query</h2>
 [Docs v4](https://tanstack.com/query/v4)
 ### Example
 
@@ -126,7 +136,7 @@ export const FetchData = () => {
 
 ```
 
-## Zustand
+<h2 id="zustand" style="color: #7743DB">Zustand</h2>
 [Doc](https://github.com/pmndrs/zustand)
 
 **Example**
@@ -166,7 +176,7 @@ export const App = () => {
 }
 ```
 
-## Commit
+<h2 id="commit" style="color: #7743DB">Commit</h2>
 
 For commit in one command use:
 ```bash
@@ -180,3 +190,48 @@ This command do:
   - **pnpm tsc** *check typescript*
   - **pnpm test:run** *launch all test*
   - **pnpm lint-staged** *lint-staged config at lint-staged.config.js*
+
+<h2 id="absolute-path" style="color: #7743DB">Absolute Path</h2>
+
+Actually 3 absolute path are configured:
+
+```ts
+// Before
+import xx from './src' 
+import xx from './src/hooks' 
+import xx from './src/components' 
+
+// After
+import xx from '@' 
+import xx from '@hooks' 
+import xx from '@components' 
+```
+
+For changed or add new absolute path you have to modify 2 files:
+
+*vite.config.ts*
+```ts
+export default defineConfig({
+  /* Some config before */
+  resolve: {
+    alias: [
+      { find: '@', replacement: path.resolve(__dirname, './src') },
+      { find: '@components', replacement: path.resolve(__dirname, './src/components') },
+      { find: '@hooks', replacement: path.resolve(__dirname, './src/hooks') },
+    ],
+  },
+})
+```
+
+*tsconfig.json*
+```json
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"]
+    }
+  }
+}
+```

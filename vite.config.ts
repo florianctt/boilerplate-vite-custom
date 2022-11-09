@@ -1,6 +1,7 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,13 +20,6 @@ export default defineConfig({
   server: {
     open: true,
   },
-  // resolve: {
-  //   alias: [
-  //     { find: '@/', replacement: '/src' },
-  //     { find: '@/Components', replacement: '/src/components' },
-  //     { find: '@/Hooks', replacement: '/src/hooks' },
-  //   ],
-  // },
   /* PRODUCTION */
   build: {
     outDir: './build',
@@ -36,5 +30,12 @@ export default defineConfig({
         assetFileNames: '[name].[ext]',
       },
     },
+  },
+  resolve: {
+    alias: [
+      { find: '@', replacement: path.resolve(__dirname, './src') },
+      { find: '@components', replacement: path.resolve(__dirname, './src/components') },
+      { find: '@hooks', replacement: path.resolve(__dirname, './src/hooks') },
+    ],
   },
 })

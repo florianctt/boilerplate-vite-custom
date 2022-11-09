@@ -18,8 +18,9 @@
     "types": ["vite/client", "vitest/globals"],
     "baseUrl": ".",
     "paths": {
-      "@app/*": ["src/app/*"],
-      "@assets/*": ["src/assets/*"]
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"]
     }
   },
   "include": ["./src", "@testing-library/jest-dom"],

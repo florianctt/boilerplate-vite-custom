@@ -1,61 +1,43 @@
-<!-- <style>
-  #link{
-    color: #4EBFFF;
-  }
-  #link:hover{
-    color: #a354fe;
-    text-decoration: none;
-  }
-  #title-link{
-    color: #ffbe0e;
-  }
-  #title-link:hover{
-    color: #a354fe;
-    text-decoration: none;
-  }
-</style> -->
-
 <p align="center">
 <img src='./markdown/vitejs.png' height="160" />
 </p>
 <br>
 
 <h1 align="center"> BoilerPlate Vite React TypeScript</h1>
-<p align="center" style="font-weight: 600;">with <a id="link" href="https://eslint.org/" target="_blank">EsLint</a>, <a id="link" href="https://vitest.dev/" target="_blank">Vitest</a>, <a id="link" href="https://sass-lang.com/" target="_blank">SASS</a>, <a id="link" href="https://tanstack.com/query/v4" target="_blank">TanStack Query</a>, <a id="link" href="https://github.com/pmndrs/zustand" target="_blank">Zustand</a>, <a id="link" href="https://typicode.github.io/husky/#/" target="_blank">Husky</a>, <a id="link" href="https://commitlint.js.org/#/" target="_blank">Commitlint</a></p>
+<p align="center">with <a href="https://eslint.org/">EsLint</a>, <a href="https://vitest.dev/">Vitest</a>, <a href="https://sass-lang.com/">SASS</a>, <a href="https://tanstack.com/query/v4">TanStack Query</a>, <a href="https://github.com/pmndrs/zustand">Zustand</a>, <a href="https://typicode.github.io/husky/#/">Husky</a>, <a href="https://commitlint.js.org/#/">Commitlint</a>, <a href="https://pnpm.io/fr/">PNPM</a></p>
 <br>
 <p align="center">
 <!-- Linter -->
-<a href="https://eslint.org/" target="_blank">
+<a href="https://eslint.org/">
 <img src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white" />
 </a>
-<a href="https://prettier.io/" target="_blank">
+<a href="https://prettier.io/">
 <img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E" />
 </a>
 <!-- Frameworks & Library -->
-<a href="https://reactjs.org/" target="_blank">
+<a href="https://reactjs.org/">
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
 </a>
-<a href="https://reactrouter.com/en/main" target="_blank">
+<a href="https://reactrouter.com/en/main">
 <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" />
 </a>
-<a href="https://sass-lang.com/" target="_blank">
+<a href="https://sass-lang.com/">
 <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
 </a>
-<a href="https://vitejs.dev/" target="_blank">
+<a href="https://vitejs.dev/">
 <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" />
 </a>
 <!-- Languages  -->
-<a href="https://www.typescriptlang.org/" target="_blank">
+<a href="https://www.typescriptlang.org/">
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
 </a>
 </p>
 <br>
 
-<h2 align="center" style="color: #ffbe0e">
+<h2 align="center">
 Table of contents
 <br>
 <br>
-<img src="./markdown/menu.svg" height="24" />
 </h2>
 <p align="center">
 Use the "Table of Contents" menu on the top-left corner to explore the list.
@@ -63,7 +45,7 @@ Use the "Table of Contents" menu on the top-left corner to explore the list.
 
 <br>
 <br>
-<h2 id="getting-started"  align="center" style="color: #ffbe0e">Getting Started</h2>
+<h2 id="getting-started"  align="center">Getting Started</h2>
 
 
 ***Install***
@@ -86,12 +68,18 @@ pnpm build
 pnpm test
 ```
 
+***Update***
+> ⚠️ Command update all packgage, unless inquirer which must remain at version 8.0.0 ⚠️
+```
+pnpm update
+```
+
 
 <br>
 <br>
-<h2 id="tanstack"  align="center" style="color: #ffbe0e"><a id="title-link" href="https://tanstack.com/query/v4" target="_blank">TanStack Query</a></h2>
+<h2 id="tanstack"  align="center"><a href="https://tanstack.com/query/v4">TanStack Query</a></h2>
 
-<h3 style="text-align: center">Example</h3>
+<h3 align="center">Example</h3>
 <br>
 <br>
 
@@ -191,7 +179,7 @@ export const FetchData = () => {
 
 <br>
 <br>
-<h2 id="zustand" align="center" style="color: #ffbe0e"><a id="title-link" href="https://github.com/pmndrs/zustand" target="_blank">Zustand</a></h2>
+<h2 id="zustand" align="center"><a href="https://github.com/pmndrs/zustand">Zustand</a></h2>
 
 
 <h3 align="center">Example</h3>
@@ -235,7 +223,7 @@ export const App = () => {
 
 <br>
 <br>
-<h2 id="commit" align="center" style="color: #ffbe0e">Commit</h2>
+<h2 id="commit" align="center">Commit</h2>
 <br>
 
 For commit in one command use:
@@ -253,7 +241,7 @@ This command do:
 
 <br>
 <br>
-<h2 id="absolute-path" align="center" style="color: #ffbe0e">Absolute Path</h2>
+<h2 id="absolute-path" align="center">Absolute Path</h2>
 <br>
 
 Actually 3 absolute path are configured:
@@ -315,3 +303,4 @@ export default defineConfig({
 - [x] Absolute Path
 - [] React Router Dom
 - [] Axios
+- [] Iconoir

@@ -4,14 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
     "build:watch": "tsc && vite build --watch",
+    "commit": "git add . && git cz",
+    "dev": "vite",
     "preview": "vite preview",
+    "prepare": "husky install",
     "test": "vitest",
     "test:run": "vitest run",
-    "prepare": "husky install",
-    "commit": "git add . && git cz"
+    "update": "pnpm up !inquirer"
   },
   "config": {
     "commitizen": {
@@ -31,24 +32,24 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/node": "^18.11.9",
-    "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
     "@vitejs/plugin-react": "^2.2.0",
     "commitizen": "^4.2.5",
     "eslint-config-standard-with-typescript": "^23.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.10",
-    "husky": "^8.0.0",
+    "husky": "^8.0.2",
     "inquirer": "8.0.0",
     "jsdom": "^20.0.2",
     "lint-staged": "^13.0.3",
-    "sass": "^1.56.0",
+    "sass": "^1.56.1",
     "typescript": "*",
-    "vite": "^3.2.0",
-    "vitest": "^0.24.5"
+    "vite": "^3.2.3",
+    "vitest": "^0.25.1"
   }
 }

@@ -3,7 +3,7 @@ With EsLint, Vitest, React, Typescript, SCSS, TanStack Query, Zustand and Husky
 
 ### TODO
 - [x] [Lint Staged](https://www.youtube.com/watch?v=oWty0Nw1ydk&ab_channel=LeighHalliday) 
-- [] Config Commitlint for fonctionnal Prompt 'Desc ok but no enum'
+- [x] Config Commitlint for fonctionnal Prompt
 - [] Absolute Path ???
 - [] React Router Dom ???
 
@@ -32,7 +32,6 @@ pnpm test
 
 
 ## TanStack Query
-___
 [Docs v4](https://tanstack.com/query/v4)
 ### Example
 
@@ -128,7 +127,6 @@ export const FetchData = () => {
 ```
 
 ## Zustand
-___
 [Doc](https://github.com/pmndrs/zustand)
 
 **Example**
@@ -167,3 +165,18 @@ export const App = () => {
   )
 }
 ```
+
+## Commit
+
+For commit in one command use:
+```bash
+pnpm commit
+```
+
+This command do:
+- **git add .**
+- **git cz** *(launch prompt for easy commit)*
+- **husky pre-commit**
+  - **pnpm tsc** *check typescript*
+  - **pnpm test:run** *launch all test*
+  - **pnpm lint-staged** *lint-staged config at lint-staged.config.js*

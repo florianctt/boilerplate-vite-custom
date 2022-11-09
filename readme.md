@@ -15,7 +15,7 @@
   }
 </style> -->
 
-<p style="text-align: center;">
+<p align="center" style="text-align: center;">
 <img src='./markdown/vitejs.png' height="160" />
 </p>
 <br>

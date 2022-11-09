@@ -1,51 +1,101 @@
-# BoilerPlate Vite
-With EsLint, Vitest, React, Typescript, SCSS, TanStack Query, Zustand and Husky
+<style>
+  #link{
+    color: #4EBFFF;
+  }
+  #link:hover{
+    color: #a354fe;
+    text-decoration: none;
+  }
+  #title-link{
+    color: #ffbe0e;
+  }
+  #title-link:hover{
+    color: #a354fe;
+    text-decoration: none;
+  }
+</style>
 
-### TODO
-- [x] [Lint Staged](https://www.youtube.com/watch?v=oWty0Nw1ydk&ab_channel=LeighHalliday) 
-- [x] Config Commitlint for fonctionnal Prompt
-- [x] Absolute Path
-- [] React Router Dom
+<p style="text-align: center;">
+<img src='./readme/vitejs.png' height="160" />
+</p>
+<br>
+
+<h1 style="text-align: center;"> BoilerPlate Vite React TypeScript</h1>
+<p style="text-align: center; font-weight: 600;">with <a id="link" href="https://eslint.org/" target="_blank">EsLint</a>, <a id="link" href="https://vitest.dev/" target="_blank">Vitest</a>, <a id="link" href="https://sass-lang.com/" target="_blank">SASS</a>, <a id="link" href="https://tanstack.com/query/v4" target="_blank">TanStack Query</a>, <a id="link" href="https://github.com/pmndrs/zustand" target="_blank">Zustand</a>, <a id="link" href="https://typicode.github.io/husky/#/" target="_blank">Husky</a>, <a id="link" href="https://commitlint.js.org/#/" target="_blank">Commitlint</a></p>
+<br>
+<p style="text-align: center;">
+<!-- Linter -->
+<a href="https://eslint.org/" target="_blank">
+<img src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white" />
+</a>
+<a href="https://prettier.io/" target="_blank">
+<img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E" />
+</a>
+<!-- Frameworks & Library -->
+<a href="https://reactjs.org/" target="_blank">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+</a>
+<a href="https://reactrouter.com/en/main" target="_blank">
+<img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" />
+</a>
+<a href="https://sass-lang.com/" target="_blank">
+<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
+</a>
+<a href="https://vitejs.dev/" target="_blank">
+<img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" />
+</a>
+<!-- Languages  -->
+<a href="https://www.typescriptlang.org/" target="_blank">
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+</a>
+</p>
+<br>
+
+<h2 style="color: #ffbe0e; text-align: center">
+Table of contents
+<br>
+<br>
+<img src="./readme/menu.svg" height="24" />
+</h2>
+<p style="text-align: center;">
+Use the "Table of Contents" menu on the top-left corner to explore the list.
+</p>
+
+<br>
+<br>
+<h2 id="getting-started" style="color: #ffbe0e; text-align: center">Getting Started</h2>
 
 
-<h2 style="color: #7743DB">Menu</h2>
-<ul>
-  <li><a href="#getting-started" style="color: olive;">Getting Started</a></li>
-  <li><a href="#tanstack" style="color: olive;">TanStack Query</a></li>
-  <li><a href="#zustand" style="color: olive;">Zustand</a></li>
-  <li><a href="#commit" style="color: olive;">Commit</a></li>
-  <li><a href="#absolute-path" style="color: olive;">Absolute Path</a></li>
-</ul>
-
-<h2 id="getting-started" style="color: #7743DB">Getting Started</h2>
-
-
-**Install**
+***Install***
 ```
 pnpm i
 ```
 
-**Dev**
+***Dev***
 ```
 pnpm dev
 ```
 
-**Build**
+***Build***
 ```
 pnpm build
 ```
 
-**Test**
+***Test***
 ```
 pnpm test
 ```
 
 
-<h2 id="tanstack" style="color: #7743DB">TanStack Query</h2>
-[Docs v4](https://tanstack.com/query/v4)
-### Example
+<br>
+<br>
+<h2 id="tanstack" style="color: #ffbe0e; text-align: center"><a id="title-link" href="https://tanstack.com/query/v4" target="_blank">TanStack Query</a></h2>
 
-**Query**
+<h3 style="text-align: center">Example</h3>
+<br>
+<br>
+
+***Query***
 ```tsx
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { FetchData } from './components/FetchData'
@@ -91,7 +141,10 @@ export const FetchData = () => {
 }
 ```
 
-**Mutation**
+<br>
+<br>
+
+***Mutation***
 ```tsx
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 
@@ -136,10 +189,14 @@ export const FetchData = () => {
 
 ```
 
-<h2 id="zustand" style="color: #7743DB">Zustand</h2>
-[Doc](https://github.com/pmndrs/zustand)
+<br>
+<br>
+<h2 id="zustand" style="color: #ffbe0e; text-align: center"><a id="title-link" href="https://github.com/pmndrs/zustand" target="_blank">Zustand</a></h2>
 
-**Example**
+
+<h3 style="text-align: center">Example</h3>
+<br>
+<br>
 
 > *store.ts*
 ```ts
@@ -176,7 +233,10 @@ export const App = () => {
 }
 ```
 
-<h2 id="commit" style="color: #7743DB">Commit</h2>
+<br>
+<br>
+<h2 id="commit" style="color: #ffbe0e; text-align: center">Commit</h2>
+<br>
 
 For commit in one command use:
 ```bash
@@ -191,7 +251,10 @@ This command do:
   - **pnpm test:run** *launch all test*
   - **pnpm lint-staged** *lint-staged config at lint-staged.config.js*
 
-<h2 id="absolute-path" style="color: #7743DB">Absolute Path</h2>
+<br>
+<br>
+<h2 id="absolute-path" style="color: #ffbe0e; text-align: center">Absolute Path</h2>
+<br>
 
 Actually 3 absolute path are configured:
 
@@ -206,10 +269,14 @@ import xx from '@'
 import xx from '@hooks' 
 import xx from '@components' 
 ```
+<br>
+<br>
 
 For changed or add new absolute path you have to modify 2 files:
+<br>
+<br>
 
-*vite.config.ts*
+> *vite.config.ts*
 ```ts
 export default defineConfig({
   /* Some config before */
@@ -223,7 +290,7 @@ export default defineConfig({
 })
 ```
 
-*tsconfig.json*
+> *tsconfig.json*
 ```json
 {
   "compilerOptions": {
@@ -235,3 +302,16 @@ export default defineConfig({
   }
 }
 ```
+
+
+<br>
+<br>
+<br>
+<br>
+
+### TODO
+- [x] [Lint Staged](https://www.youtube.com/watch?v=oWty0Nw1ydk&ab_channel=LeighHalliday) 
+- [x] Config Commitlint for fonctionnal Prompt
+- [x] Absolute Path
+- [] React Router Dom
+- [] Axios

@@ -301,6 +301,7 @@ export default defineConfig({
 - [x] [Lint Staged](https://www.youtube.com/watch?v=oWty0Nw1ydk&ab_channel=LeighHalliday) 
 - [x] Config Commitlint for fonctionnal Prompt
 - [x] Absolute Path
+- [x] Axios
+- [x] Iconoir
 - [] React Router Dom
-- [] Axios
-- [] Iconoir
+- [] Launch test on commit only if file test are modify

@@ -1,26 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import { Trash } from 'iconoir-react'
+import axios from 'axios'
 
 export const FetchData = () => {
   const urlGet = 'http://bot-habitat/wp-json/chatbot/data'
   const urlDelete = 'http://bot-habitat/wp-json/chatbot/delete?'
   const queryClient = useQueryClient()
-  const { isLoading, error, data } = useQuery(
-    ['message'],
-    async () => await fetch(urlGet).then((res: any) => res.json())
-  )
+  const { isLoading, error, data } = useQuery(['message'], async () => await axios.get(urlGet).then(res => res.data))
 
-  const dataDelete = useMutation(
-    (id: string) =>
-      fetch(`${urlDelete}${new URLSearchParams({ id: id })}`, {
-        method: 'DELETE',
-      }),
-    {
-      onSuccess: () => {
-        queryClient.invalidateQueries(['message'])
-      },
-    }
-  )
+  const dataDelete = useMutation((id: string) => axios.delete(`${urlDelete}${new URLSearchParams({ id: id })}`), {
+    onSuccess: () => {
+      queryClient.invalidateQueries(['message'])
+    },
+  })
 
   if (isLoading) return <p>Loading...</p>
   if (error) return <p>An error has occurred: {(error as any).message}</p>
@@ -44,13 +37,12 @@ export const FetchData = () => {
             style={{
               position: 'absolute',
               top: 0,
-              right: -20,
-              color: 'goldenrod',
+              right: -30,
               cursor: 'pointer',
             }}
             onClick={() => dataDelete.mutate(message.id)}
           >
-            X
+            <Trash color='black' width={24} height={24} strokeWidth={1.6} />
           </span>
           <p
             style={{

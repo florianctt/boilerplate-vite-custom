@@ -9,7 +9,9 @@ export const App = () => {
   return (
     <>
       <h1>App</h1>
-      <QueryClientProvider client={queryClient}>{/* <FetchData /> */}</QueryClientProvider>
+      <QueryClientProvider client={queryClient}>
+        <FetchData />
+      </QueryClientProvider>
       <hr />
       <h3>Store</h3>
       <p>Store count: {count}</p>

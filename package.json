@@ -21,7 +21,9 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.14.5",
+    "axios": "^1.1.3",
     "eslint": "^8.27.0",
+    "iconoir-react": "^5.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zustand": "^4.1.4"

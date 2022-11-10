@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "test": "vitest",
-    "test:run": "vitest run",
+    "test:run": "vitest run --changed HEAD~1",
     "update": "pnpm up !inquirer"
   },
   "config": {

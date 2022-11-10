@@ -4,7 +4,7 @@
 <br>
 
 <h1 align="center"> BoilerPlate Vite React TypeScript</h1>
-<p align="center">with <a href="https://eslint.org/">EsLint</a>, <a href="https://vitest.dev/">Vitest</a>, <a href="https://sass-lang.com/">SASS</a>, <a href="https://tanstack.com/query/v4">TanStack Query</a>, <a href="https://github.com/pmndrs/zustand">Zustand</a>, <a href="https://typicode.github.io/husky/#/">Husky</a>, <a href="https://commitlint.js.org/#/">Commitlint</a>, <a href="https://pnpm.io/fr/">PNPM</a></p>
+<p align="center">with <a href="https://eslint.org/">EsLint</a>, <a href="https://vitest.dev/">Vitest</a>, <a href="https://sass-lang.com/">SASS</a>, <a href="https://tanstack.com/query/v4">TanStack Query</a>, <a href="https://github.com/pmndrs/zustand">Zustand</a>, <a href="https://typicode.github.io/husky/#/">Husky</a>, <a href="https://commitlint.js.org/#/">Commitlint</a>, <a href="https://pnpm.io/fr/">PNPM</a>, <a href="https://axios-http.com/docs/intro">Axios</a>, <a href="https://iconoir.com/">Iconoir</a></p>
 <br>
 <p align="center">
 <!-- Linter -->
@@ -233,7 +233,7 @@ pnpm commit
 
 This command do:
 - **git add .**
-- **git cz** *(launch prompt for easy commit)*
+- **git cz** *(launch prompt for easy conventional commit)*
 - **husky pre-commit**
   - **pnpm tsc** *check typescript*
   - **pnpm test:run** *launch all test*
@@ -291,6 +291,22 @@ export default defineConfig({
 }
 ```
 
+<br>
+<br>
+<h2 id="iconoir" align="center"><a href="https://iconoir.com/">Iconoir</a></h2>
+<br>
+
+To use an SVG from iconoir, go to ce doc, find icons you want to use and import it in your component
+
+```tsx
+import { Trash } from 'iconoir-react'
+```
+
+You can personalize an SVG by passed props
+
+```tsx
+<Trash color='black' width={24} height={24} strokeWidth={1.6} />
+```
 
 <br>
 <br>
@@ -303,5 +319,5 @@ export default defineConfig({
 - [x] Absolute Path
 - [x] Axios
 - [x] Iconoir
-- [] React Router Dom
+- [] React Router Dom before TanStack Router release stable version
 - [] Launch test on commit only if file test are modify

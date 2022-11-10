@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "test": "vitest",
-    "test:run": "vitest run --changed HEAD~1",
+    "test:run": "vitest run",
     "update": "pnpm up !inquirer"
   },
   "config": {
@@ -26,6 +26,7 @@
     "iconoir-react": "^5.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
     "zustand": "^4.1.4"
   },
   "devDependencies": {
